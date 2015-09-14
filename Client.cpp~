@@ -1,0 +1,44 @@
+#include "Client.h"
+
+
+
+using namespace::std;
+/***************************************************************************
+ * Represents the Client 
+ *
+ ***************************************************************************/
+
+  /**
+   *Constructor
+   */
+  Client::Client()
+  {
+    
+  }
+
+  /**
+   *Destructor
+   */
+  Client::~Client()
+  {
+
+  }
+  
+  /**
+   *Starts the Client. Called at the start of the program.
+   *
+   *Causes program to wait for input
+   */
+  int Client::start()
+  {
+    return 0;
+  }
+
+  void Client::quit()
+  {
+
+  }
+  
+
+
+

@@ -19,10 +19,6 @@ public:
   void quit();
 
 private: 
-  /**
-   *Comunicator
-   */
-  ClientComunicator clientComunicator;
 
   /**
    * Controller

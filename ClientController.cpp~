@@ -1,0 +1,30 @@
+#include "ClientController.h"
+
+
+
+using namespace::std;
+/***************************************************************************
+ * Represents the Client Controller 
+ *
+ ***************************************************************************/
+
+  /**
+   *Constructor
+   */
+  ClientController::ClientController()
+  {
+    
+  }
+
+  /**
+   *Destructor
+   */
+  ClientController::~ClientController()
+  {
+
+  }
+  
+  
+
+
+

@@ -1,4 +1,4 @@
-#include "ClientComunicator.h"
+#include<ClientComunicator.h>
 
 
 
@@ -23,13 +23,6 @@ using namespace::std;
   {
 
   }
-
-string ClientComunicator::send(string user,string subject,string message)
-{
-  
-  return "Message Sent to :\n"+user +"\n" +subject + "\n" +message;
-}
-
   
   
 

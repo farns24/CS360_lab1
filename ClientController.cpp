@@ -1,5 +1,6 @@
 #include "ClientController.h"
 #include <sstream>
+#include <iostream>
 
 
 using namespace::std;
@@ -33,7 +34,7 @@ using namespace::std;
     stringstream ss;
     ss.str(input);
 
-    string output = "error";
+    string output = "I don't recognize that command.";
     
     string command;
     string user;
@@ -43,7 +44,9 @@ using namespace::std;
     ss >> command;
     if (command == "send" && ss >> user && ss >> subject )
       {
-	    output = "send";	  
+	//output = "send";	
+	    getline(cin,message);
+	  output =  clientComunicator.send(user,subject,message);
       }
 
     else if (command =="list" && ss >> user)

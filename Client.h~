@@ -1,25 +1,36 @@
 #pragma once
 
-#include <string>
 #include "ClientComunicator.h"
+#include "ClientController.h"
 
 using namespace::std;
 /*************************************************************************
- *Header file for Client Comunicator Class
+ *Header file for Client Class
  *************************************************************************/
-class ClientController
+class Client
 {
 public:
-  ClientController();
+  Client();
 
-  ~ClientController();
+  ~Client();
 
-  string process(string input);
-private:
-  
+  int start();
+
+  void quit();
+
+private: 
   /**
    *Comunicator
    */
   ClientComunicator clientComunicator;
 
+  /**
+   * Controller
+   */
+   ClientController clientController;
+
+  /**
+   * Flag marking if we are in debug mode.
+   */
+  bool debugMode;
 };

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 using namespace::std;
 /*************************************************************************
  *Header file for Client Comunicator Class
@@ -10,5 +11,7 @@ public:
   ClientComunicator();
 
   ~ClientComunicator();
+
+string send(string user,string subject,string message);
 
 };
